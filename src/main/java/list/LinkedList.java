@@ -40,7 +40,7 @@ public class LinkedList<E> implements ListInterface<E>{
         numItems++;
     }
 
-    private Node<E> getNode(int index) {
+    public Node<E> getNode(int index) {
         if (index >= -1 && index <= numItems - 1) {
             Node<E> currNode = head;
             for (int i = 0; i <= index; i++) {

@@ -51,7 +51,12 @@ class ArrayListTest {
         list.set(0, 100);
         list.add(2, 300);
         list.print();
-   }
+
+
+        LinkedListIterator iter = new LinkedListIterator(list);
+        while (iter.hasNext())
+            System.out.print(iter.next().item + " -> ");
+    }
 
    @Test
    public void CircularLinkedList_테스트() throws Exception {
