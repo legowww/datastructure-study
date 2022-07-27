@@ -10,7 +10,6 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         tail.next = tail;
     }
 
-
     public void print() {
         Node<E> currNode = tail.next;
         for (int i = 0; i < numItems; ++i) {
@@ -24,7 +23,6 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         System.out.println();
     }
 
-
     private Node<E> getNode(int index) {
         //index=-1 => dummy head node
         if (index >= - 1 && index < numItems) {
@@ -36,7 +34,6 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         } else
             return null;
     }
-
 
     @Override
     public void add(int index, E x) {

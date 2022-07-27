@@ -7,7 +7,7 @@ public class LinkedList<E> implements ListInterface<E>{
     private int numItems;
     public LinkedList() {
         numItems = 0;
-        head = new Node<>(null, null); //dummy node
+        head = new Node<>(null, null); //index=-1 -> dummy node
     }
 
     public void print() {
