@@ -26,7 +26,6 @@ public class ArrayStack<E> implements StackInterface<E>{
             }
             System.out.println();
         }
-
     }
 
     @Override

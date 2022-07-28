@@ -1,6 +1,5 @@
 package list;
 
-import javax.swing.table.TableRowSorter;
 
 public class LinkedList<E> implements ListInterface<E>{
     private Node<E> head;
