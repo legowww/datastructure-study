@@ -23,10 +23,20 @@ class ArrayQueueTest {
         queue.print();
         queue.dequeue();
         queue.print();
-
         //when
 
         //then
     }
 
+    @Test
+    public void ListQueueTest() throws Exception {
+        LinkedQueue<String> queue = new LinkedQueue<>();
+        queue.enqueue("test1");
+        queue.dequeue();
+
+        queue.enqueue("test1");
+        queue.enqueue("test2");
+        queue.dequeue();
+        queue.print();
+    }
 }

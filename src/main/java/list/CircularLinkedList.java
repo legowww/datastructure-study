@@ -41,6 +41,7 @@ public class CircularLinkedList<E> implements ListInterface<E> {
             Node<E> prevNode = getNode(index - 1);
             Node<E> newNode = new Node<>(x, prevNode.next);
             prevNode.next = newNode;
+            //append()와 동일한 상황
             if (index == numItems) {
                 tail = newNode;
             }
@@ -56,13 +57,6 @@ public class CircularLinkedList<E> implements ListInterface<E> {
         tail = newNode;
         numItems++;
     }
-
-    public void pop(E x) {
-        if (!isEmpty()) {
-            Node<E> prevNode = tail;
-        }
-    }
-
 
     @Override
     public E remove(int index) {
